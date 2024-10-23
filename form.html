@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSComerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/product-form.css">
+</head>
+
+<body>
+    <header class="dsc-header-admin">
+        <nav class="dsc-container">
+            <h1>DSC Admin</h1>
+            <div class="dsc-nav-bar-right">
+                <div class="dsc-menu-items-container">
+                    <div class="dsc-menu-item">
+                        <img src="image/home.svg" alt="Início">
+                        <p>Início</p>
+                    </div>
+                    <div class="dsc-menu-item">
+                        <img src="image/products.svg" alt="Cadastro de Produtos">
+                        <p class="dsc-menu-item-active">Produtos</p>
+                    </div>
+                </div>
+                <div class="dsc-logged-user">
+                    <p>Maria Silva</p>
+                    <a class="dsc-link-admin" href="#">Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="product-form-section" class="dsc-container">
+            <div class="dsc-product-form-container">
+                <form class="dsc-card dsc-form" action="">
+                    <h2>Dados do Produto</h2>
+                    <div class="dsc-form-controls-container">
+                        <div>
+                            <input class="dsc-form-control" type="text" placeholder="Nome" />
+                        </div>
+                        <div>
+                            <input class="dsc-form-control" type="text" placeholder="Preco" />
+                        </div>
+                        <div>
+                            <input class="dsc-form-control" type="text" placeholder="Imagem" />
+                        </div>
+                        <div>
+                            <div>
+                                <select class="dsc-form-control dsc-select" required>
+                                    <option value="" disabled selected>Categorias</option>
+                                    <option value="1">Moda</option>
+                                    <option value="2">Cama, mesa e banho</option>
+                                    <option value="3">Doce</option>
+                                </select>
+                            </div>
+                            <div class="dsc-mt20">
+                                <textarea name="" class="dsc-form-control dsc-textarea" placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dsc-product-form-button">
+                        <button type="submit" class="dsc-btn dsc-btn-white">Cancelar</button>
+                        <button type="submit" class="dsc-btn dsc-btn-blue">Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

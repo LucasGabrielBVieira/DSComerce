@@ -1,0 +1,19 @@
+@import url('style.css');
+
+#confirmation-section {
+    padding: 20px 0;
+}
+
+.dsc-confirmation-message {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dsc-color-font-primary);
+}
+
+@media (min-width: 576px) {
+    .dsc-confirmation-message {
+        text-align: left;
+        font-size: 24px;
+    }
+}
